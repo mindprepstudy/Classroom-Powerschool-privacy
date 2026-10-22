@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Classroom to PowerSchool Grade Transfer</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1b1f24; --muted:#58616b; --line:#d8dde5; --accent:#1a5fb4; --mark:#fff3b0; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg:#14181d; --fg:#e8ecf1; --muted:#a3adb8; --line:#2b333c; --accent:#8ab4f8; --mark:#5a4a00; }
+  }
+  :root[data-theme="dark"] { --bg:#14181d; --fg:#e8ecf1; --muted:#a3adb8; --line:#2b333c; --accent:#8ab4f8; --mark:#5a4a00; }
+  html { color-scheme: light dark; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:1.7rem; line-height:1.25; margin:0 0 4px; }
+  h2 { font-size:1.2rem; margin:32px 0 8px; padding-top:12px; border-top:1px solid var(--line); }
+  p, li { margin:0 0 10px; }
+  ul { padding-left:22px; }
+  .meta { color:var(--muted); margin-bottom:24px; }
+  .mark { background:var(--mark); padding:0 4px; border-radius:3px; }
+  a { color:var(--accent); }
+  table { border-collapse:collapse; width:100%; margin:8px 0 16px; }
+  th, td { text-align:left; vertical-align:top; padding:8px 10px; border:1px solid var(--line); font-size:.95rem; }
+  th { background:rgba(127,127,127,.12); }
+  .scroll { overflow-x:auto; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta"><strong>Classroom to PowerSchool Grade Transfer</strong> (Chrome extension) · Last updated: October 22, 2026</p>
+
+  <p>This extension helps a teacher copy the grades of one Google Classroom assignment into the matching PowerSchool score cells. It works entirely inside your own browser. <strong>It does not send any data to the developer or to any other server.</strong></p>
+
+  <h2>1. What the extension reads</h2>
+  <p>Only when you press a button in the extension (Capture, Preview &amp; Match, Load Current PowerSchool Class, Transfer), it reads from the page you are looking at:</p>
+  <ul>
+    <li><strong>Google Classroom page:</strong> student names, scores, maximum points, and the course and assignment titles shown on screen.</li>
+    <li><strong>PowerSchool page:</strong> the numbered list of student names, the score cells and, for the accommodation comments, the comment boxes of the students on the score-entry page.</li>
+  </ul>
+  <p>If several PowerSchool tabs are open, the extension checks each of them to find the student list. It does not read your password, does not read pages of any other website, and does not collect browsing history.</p>
+
+  <h2>2. What the extension writes</h2>
+  <p>On the PowerSchool score-entry page it enters scores into empty score cells and, if you choose to, adds accommodation comments. It never clicks Save or Submit and never overwrites a score that is already there. You review the page and save it yourself.</p>
+
+  <h2>3. What is stored, where, and for how long</h2>
+  <p>Everything is stored in the browser’s local extension storage on your computer (<code>chrome.storage.local</code>). It is not synced and not sent anywhere.</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Data</th><th>Purpose</th><th>How long</th></tr></thead>
+    <tbody>
+      <tr><td>Captured grades (student names, scores, assignment and course titles)</td><td>To preview and transfer the grades</td><td>Cleared after a fully successful transfer or when you press “Clear Captured Grades”. A capture older than 30 minutes is removed the next time the extension starts.</td></tr>
+      <tr><td>Accommodation profiles (student name and the accommodation items you chose)</td><td>To add accommodation comments without re-selecting them each time</td><td>Until you delete them or remove the extension</td></tr>
+      <tr><td>Confirmed name matches (a Classroom spelling and the matching PowerSchool name)</td><td>To match the same student automatically next time</td><td>Until you delete them or remove the extension</td></tr>
+      <tr><td>Settings (interface language, your PowerSchool web address, sites you allowed)</td><td>To open PowerSchool and keep your preferences</td><td>Until you remove the extension</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Accommodation profiles can describe a student’s support needs. They are kept only on your computer. You can save them to a file with “Export profiles”; that file is created on your own computer and you decide where it goes.</p>
+
+  <h2>4. What we do not do</h2>
+  <ul>
+    <li>We do not send, sell, rent or share any data with anyone.</li>
+    <li>We do not use analytics, advertising, tracking or crash-reporting services.</li>
+    <li>We do not make network requests of our own and do not load or run remote code. All code is inside the extension package.</li>
+    <li>We do not use data for any purpose other than the grade transfer described above, and not to decide creditworthiness or lending.</li>
+  </ul>
+
+  <h2>5. Permissions</h2>
+  <ul>
+    <li><strong>Google Classroom and *.powerschool.com pages:</strong> to read the grades you capture and to enter scores.</li>
+    <li><strong>Optional access to one more site:</strong> if your school’s PowerSchool has its own web address, you can press “Allow this site”; Chrome then asks you to approve that single site. No other sites are accessed.</li>
+    <li><strong>Active tab, scripting:</strong> to run the extension on the tab you are using, when you ask it to.</li>
+    <li><strong>Storage:</strong> to keep the data listed in section 3 on your computer.</li>
+    <li><strong>Side panel:</strong> to show the extension next to the page.</li>
+  </ul>
+
+  <h2>6. Student information and your school’s rules</h2>
+  <p>Student names, scores and accommodations are education information. The extension keeps it on your device and does not transmit it, but you remain responsible for using it in line with your school’s and district’s policies. Check with your school’s technology or privacy office if you are unsure.</p>
+
+  <h2>7. Deleting your data</h2>
+  <ul>
+    <li>Press “Clear Captured Grades” in the extension to remove captured grades at any time.</li>
+    <li>In “Manage Accommodations” you can delete the saved profile of any single student.</li>
+    <li>Removing the extension from Chrome deletes everything it stored, including accommodation profiles and name matches. Export your profiles first if you want to keep them.</li>
+  </ul>
+
+  <h2>8. Chrome Web Store User Data Policy</h2>
+  <p>The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+
+  <h2>9. Children</h2>
+  <p>The extension is a tool for teachers and is not directed to children. It does not collect information from students; it only handles the names and scores that a teacher already has in Classroom and PowerSchool.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>If the extension’s behavior changes in a way that affects your data, this page will be updated and the date at the top will change.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions about this policy: <a href="mailto:mindprep.study@gmail.com">mindprep.study@gmail.com</a></p>
+
+  <p class="meta">Not affiliated with, endorsed by or sponsored by Google or PowerSchool. Google Classroom and PowerSchool are trademarks of their respective owners.</p>
+</main>
+</body>
+</html>
